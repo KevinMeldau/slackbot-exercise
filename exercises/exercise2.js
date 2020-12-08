@@ -23,10 +23,10 @@ module.exports.botScripts = [
   // mychatbot> mychatbot What's the area of a circle with radius 5?
   // mychatbot responds to user "The area is 78.5398...."
   {
-    label: 'An Example Script with Variables',
-    prompt: 'Say hello to #{name}',
+    label: 'Question 2 - radius',
+    prompt: 'What is the area of a circle with radius #{number as number}',
     handler: function (params) {
-      return 'Hello ' + params.name + '!';
+      return 'The area is ' + ((params.number * params.number) * Math.PI);
     },
     isListening: true,
   },
