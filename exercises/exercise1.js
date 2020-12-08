@@ -1,5 +1,5 @@
 // Set this assignment to false if you do not want to use it.
-module.exports.ACTIVATE_BOT = true;
+module.exports.ACTIVATE_BOT = false;
 
 module.exports.botScripts = [
   {
