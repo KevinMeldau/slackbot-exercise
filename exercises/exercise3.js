@@ -29,9 +29,9 @@ module.exports.botScripts = [
     handler: function (params) {
       const state = params.state;
       if (
-        state == "Georgia" ||
-        state == "California" ||
-        state == "Washington"
+        state.toLowerCase() === "georgia" ||
+        state.toLowerCase() === "california" ||
+        state.toLowerCase() === "washington"
       ) {
         return (
           "OK Nice, I love " +
@@ -40,55 +40,55 @@ module.exports.botScripts = [
           state +
           " people are my people. Are you ready to start playing?"
         );
-      } else if (state == "Florida") {
+      } else if (state.toLowerCase() === "florida") {
         return "What is up with you people? I have so many questions. I just don't think we can be friends, goodbye.";
       } else if (
-        state === "Alabama" ||
-        state === "Alaska" ||
-        state === "Arizona" ||
-        state === "Arkansas" ||
-        state === "Colorado" ||
-        state === "Connecticut" ||
-        state === "Delaware" ||
-        state === "Hawaii" ||
-        state === "Idaho" ||
-        state === "Illinois" ||
-        state === "Indiana" ||
-        state === "Iowa" ||
-        state === "Kansas" ||
-        state === "Kentucky" ||
-        state === "Louisiana" ||
-        state === "Maine" ||
-        state === "Maryland" ||
-        state === "Massachusetts" ||
-        state === "Michigan" ||
-        state === "Minnesota" ||
-        state === "Mississippi" ||
-        state === "Missouri" ||
-        state === "Montana" ||
-        state === "Nebraska" ||
-        state === "Nevada" ||
-        state === "New Hampshire" ||
-        state === "New Jersey" ||
-        state === "New Mexico" ||
-        state === "New York" ||
-        state === "North Carolina" ||
-        state === "North Dakota" ||
-        state === "Ohio" ||
-        state === "Oklahoma" ||
-        state === "Oregon" ||
-        state === "Pennsylvania" ||
-        state === "Rhode Island" ||
-        state === "South Carolina" ||
-        state === "South Dakota" ||
-        state === "Tennessee" ||
-        state === "Texas" ||
-        state === "Utah" ||
-        state === "Vermont" ||
-        state === "Virginia" ||
-        state === "West Virginia" ||
-        state === "Wisconsin" ||
-        state === "Wyoming"
+        state.toLowerCase() === "alabama" ||
+        state.toLowerCase() === "alaska" ||
+        state.toLowerCase() === "arizona" ||
+        state.toLowerCase() === "arkansas" ||
+        state.toLowerCase() === "colorado" ||
+        state.toLowerCase() === "connecticut" ||
+        state.toLowerCase() === "delaware" ||
+        state.toLowerCase() === "hawaii" ||
+        state.toLowerCase() === "idaho" ||
+        state.toLowerCase() === "illinois" ||
+        state.toLowerCase() === "indiana" ||
+        state.toLowerCase() === "iowa" ||
+        state.toLowerCase() === "kansas" ||
+        state.toLowerCase() === "kentucky" ||
+        state.toLowerCase() === "louisiana" ||
+        state.toLowerCase() === "maine" ||
+        state.toLowerCase() === "maryland" ||
+        state.toLowerCase() === "massachusetts" ||
+        state.toLowerCase() === "michigan" ||
+        state.toLowerCase() === "minnesota" ||
+        state.toLowerCase() === "mississippi" ||
+        state.toLowerCase() === "missouri" ||
+        state.toLowerCase() === "montana" ||
+        state.toLowerCase() === "nebraska" ||
+        state.toLowerCase() === "nevada" ||
+        state.toLowerCase() === "new hampshire" ||
+        state.toLowerCase() === "new jersey" ||
+        state.toLowerCase() === "new mexico" ||
+        state.toLowerCase() === "new york" ||
+        state.toLowerCase() === "north carolina" ||
+        state.toLowerCase() === "north dakota" ||
+        state.toLowerCase() === "ohio" ||
+        state.toLowerCase() === "oklahoma" ||
+        state.toLowerCase() === "oregon" ||
+        state.toLowerCase() === "pennsylvania" ||
+        state.toLowerCase() === "rhode island" ||
+        state.toLowerCase() === "south carolina" ||
+        state.toLowerCase() === "south dakota" ||
+        state.toLowerCase() === "tennessee" ||
+        state.toLowerCase() === "texas" ||
+        state.toLowerCase() === "utah" ||
+        state.toLowerCase() === "vermont" ||
+        state.toLowerCase() === "virginia" ||
+        state.toLowerCase() === "west virginia" ||
+        state.toLowerCase() === "wisconsin" ||
+        state.toLowerCase() === "wyoming"
       ) {
         return "I think we'll be OK. Are you ready to start playing?";
       } else {
@@ -110,7 +110,7 @@ module.exports.botScripts = [
     prompt: "Q1: What is #{answer1}?",
     handler: function (params) {
       const answer1 = params.answer1;
-      if (answer1 === "geography" || answer1 === "Geography") {
+      if (answer1.toLowerCase() === "geography") {
         return (
           answer1 +
           " is the correct answer. Well done! \n Next question: What is the second biggest country?"
@@ -123,7 +123,6 @@ module.exports.botScripts = [
   },
   {
     label: "Question 2",
-    // All prompts need to be different
     // Check below to make all lowercase and not have to have ||
     prompt: "Q2: What is #{answer2}?",
     handler: function (params) {
@@ -144,7 +143,7 @@ module.exports.botScripts = [
     prompt: "Q3: What is the #{answer3}?",
     handler: function (params) {
       const answer3 = params.answer3;
-      if (answer3 === "nile" || answer3 === "Nile") {
+      if (answer3.toLowerCase() === "nile") {
         return (
           "The " +
           answer3 +
@@ -161,7 +160,7 @@ module.exports.botScripts = [
     prompt: "Q4: What is #{answer4}?",
     handler: function (params) {
       const answer4 = params.answer4;
-      if (answer4 === "india" || answer4 === "India") {
+      if (answer4.toLowerCase() === "india") {
         return (
           answer4 +
           " is the correct answer. Well done! \n Next question: What country calls itself Nippon?"
@@ -177,7 +176,7 @@ module.exports.botScripts = [
     prompt: "Q5: What is #{answer5}?",
     handler: function (params) {
       const answer5 = params.answer5;
-      if (answer5 === "japan" || answer5 === "Japan") {
+      if (answer5.toLowerCase() === "japan") {
         return (
           answer5 +
           " is the correct answer. Well done! \n Next question: Which countries share the longest border in the world?"
@@ -193,7 +192,7 @@ module.exports.botScripts = [
     prompt: "Q6: What is the #{answer6}?",
     handler: function (params) {
       const answer6 = params.answer6;
-      if (answer6 === "usa and canada" || answer6 === "USA and Canada") {
+      if (answer6.toLowerCase() === "usa and canada") {
         return (
           "The " +
           answer6 +
@@ -210,7 +209,7 @@ module.exports.botScripts = [
     prompt: "Q7: What is the #{answer7}?",
     handler: function (params) {
       const answer7 = params.answer7;
-      if (answer7 === "equator" || answer7 === "Equator") {
+      if (answer7.toLowerCase() === "equator") {
         return (
           "The " +
           answer7 +
@@ -227,7 +226,7 @@ module.exports.botScripts = [
     prompt: "Q8: What is #{answer8}?",
     handler: function (params) {
       const answer8 = params.answer8;
-      if (answer8 === "k2" || answer8 === "K2") {
+      if (answer8.toLowerCase() === "k2") {
         return (
           answer8 +
           " is the correct answer. Well done! \n Next question: In which ocean is Fiji?"
@@ -238,17 +237,15 @@ module.exports.botScripts = [
     },
     isListening: true,
   },
-
-  // Problem here
   {
     label: "Question 9",
     prompt: "Q9: What is the #{answer9}?",
     handler: function (params) {
-      const answer8 = params.answer8;
-      if (answer8 === "pacific" || answer8 === "Pacific") {
+      const answer9 = params.answer9;
+      if (answer9.toLowerCase() === "pacific") {
         return (
           "The " +
-          answer8 +
+          answer9 +
           " is the correct answer. Well done! \n Next question: Which river rises in Peru, has no bridge crossing it and enters the sea in Brazil?"
         );
       } else {
@@ -261,11 +258,11 @@ module.exports.botScripts = [
     label: "Question 10",
     prompt: "Q10: What is the #{answer10}?",
     handler: function (params) {
-      const answer9 = params.answer9;
-      if (answer9 === "amazon" || answer9 === "Amazon") {
+      const answer10 = params.answer10;
+      if (answer10.toLowerCase() === "amazon") {
         return (
           "The " +
-          answer9 +
+          answer10 +
           " is the correct answer. Well done! Clearly, these are too easy for you. The questions are about to get a lot harder. \n Next question: What was the name of the supercontinent of 200 million years ago?"
         );
       } else {
@@ -278,11 +275,11 @@ module.exports.botScripts = [
     label: "Question 11",
     prompt: "Q11: What is #{answer11}?",
     handler: function (params) {
-      const answer10 = params.answer10;
-      if (answer10 === "pangaea" || answer10 === "Pangaea") {
+      const answer11 = params.answer11;
+      if (answer11.toLowerCase() === "pangaea") {
         return (
-          answer10 +
-          " is the correct answer. Well done! \n Next question: Name the countries surround the Czech Republic?"
+          answer11 +
+          " is the correct answer. Well done! \n Next question: What is the largest of the Channel Islands?"
         );
       } else {
         return "Wrong";
@@ -294,12 +291,9 @@ module.exports.botScripts = [
     label: "Question 12",
     prompt: "Q12: What is #{answer12}?",
     handler: function (params) {
-      const answer10 = params.answer10;
-      if (
-        answer10 === "germany, poland, slovakia, and austria" ||
-        answer10 === "Germany, Poland, Slovakia, and Austria"
-      ) {
-        return answer10 + " is the correct answer. Well done!";
+      const answer12 = params.answer12;
+      if (answer12.toLowerCase() === "jersey") {
+        return answer12 + " is the correct answer. Well done!";
       } else {
         return "Wrong";
       }
