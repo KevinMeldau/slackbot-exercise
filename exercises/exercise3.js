@@ -116,14 +116,13 @@ module.exports.botScripts = [
           " is the correct answer. Well done! \n Next question: What is the second biggest country?"
         );
       } else {
-        return "Wrong";
+        return "Sorry, that's wrong. Thanks for playing and goodbye!";
       }
     },
     isListening: true,
   },
   {
     label: "Question 2",
-    // Check below to make all lowercase and not have to have ||
     prompt: "Q2: What is #{answer2}?",
     handler: function (params) {
       const answer2 = params.answer2;
@@ -133,7 +132,7 @@ module.exports.botScripts = [
           " is the correct answer. Well done! \n Next question: What is the longest river in Africa?"
         );
       } else {
-        return "Wrong";
+        return "Sorry, that's wrong. Thanks for playing and goodbye!";
       }
     },
     isListening: true,
@@ -150,7 +149,7 @@ module.exports.botScripts = [
           " is the correct answer. Well done! \n Next question: Mumbai, Chennai, and Kolkata are metropolitan cities in which country?"
         );
       } else {
-        return "Wrong";
+        return "Sorry, that's wrong. Thanks for playing and goodbye!";
       }
     },
     isListening: true,
@@ -166,7 +165,7 @@ module.exports.botScripts = [
           " is the correct answer. Well done! \n Next question: What country calls itself Nippon?"
         );
       } else {
-        return "Wrong";
+        return "Sorry, that's wrong. Thanks for playing and goodbye!";
       }
     },
     isListening: true,
@@ -182,7 +181,7 @@ module.exports.botScripts = [
           " is the correct answer. Well done! \n Next question: Which countries share the longest border in the world?"
         );
       } else {
-        return "Wrong";
+        return "Sorry, that's wrong. Thanks for playing and goodbye!";
       }
     },
     isListening: true,
@@ -199,7 +198,7 @@ module.exports.botScripts = [
           " is the correct answer. Well done! \n Next question: What is the line of latitude that runs around the center of the world called?"
         );
       } else {
-        return "Wrong";
+        return "Sorry, that's wrong. Thanks for playing and goodbye!";
       }
     },
     isListening: true,
@@ -216,7 +215,7 @@ module.exports.botScripts = [
           " is the correct answer. Well done! \n Next question: What is the world’s second highest mountain after Everest in Asia?"
         );
       } else {
-        return "Wrong";
+        return "Sorry, that's wrong. Thanks for playing and goodbye!";
       }
     },
     isListening: true,
@@ -232,7 +231,7 @@ module.exports.botScripts = [
           " is the correct answer. Well done! \n Next question: In which ocean is Fiji?"
         );
       } else {
-        return "Wrong";
+        return "Sorry, that's wrong. Thanks for playing and goodbye!";
       }
     },
     isListening: true,
@@ -249,7 +248,7 @@ module.exports.botScripts = [
           " is the correct answer. Well done! \n Next question: Which river rises in Peru, has no bridge crossing it and enters the sea in Brazil?"
         );
       } else {
-        return "Wrong";
+        return "Sorry, that's wrong. Thanks for playing and goodbye!";
       }
     },
     isListening: true,
@@ -266,7 +265,7 @@ module.exports.botScripts = [
           " is the correct answer. Well done! Clearly, these are too easy for you. The questions are about to get a lot harder. \n Next question: What was the name of the supercontinent of 200 million years ago?"
         );
       } else {
-        return "Wrong";
+        return "Sorry, that's wrong. Thanks for playing and goodbye!";
       }
     },
     isListening: true,
@@ -282,7 +281,7 @@ module.exports.botScripts = [
           " is the correct answer. Well done! \n Next question: What is the largest of the Channel Islands?"
         );
       } else {
-        return "Wrong";
+        return "Sorry, that's wrong. Thanks for playing and goodbye!";
       }
     },
     isListening: true,
@@ -295,14 +294,9 @@ module.exports.botScripts = [
       if (answer12.toLowerCase() === "jersey") {
         return answer12 + " is the correct answer. Well done!";
       } else {
-        return "Wrong";
+        return "Sorry, that's wrong. Thanks for playing and goodbye!";
       }
     },
     isListening: true,
   },
 ];
-
-// I know I\'m just a Slackbot, but you\'re making me blush! What can I do with you? Sorry! I mean how can I help you
-
-// Why can't we use variables outside each function?
-// Why can't we use only one word for the input prompt?
