@@ -120,7 +120,7 @@ module.exports.botScripts = [
           " is the correct answer. Well done! \n Next question: What is the second biggest country in the world?"
         );
       } else {
-        return "Sorry, that's wrong. Thanks for playing and goodbye!";
+        return "Sorry, that's wrong. A person with your IQ should have a low voice too!";
       }
     },
     isListening: true,
@@ -141,7 +141,7 @@ module.exports.botScripts = [
           " is the correct answer. Well done! \n Next question: What is the longest river in Africa?"
         );
       } else {
-        return "Sorry, that's wrong. Thanks for playing and goodbye!";
+        return "Sorry, that's wrong. All that you are you owe to your parents. Why don't you send them a penny and square the account?";
       }
     },
     isListening: true,
@@ -163,7 +163,7 @@ module.exports.botScripts = [
           " is the correct answer. Well done! \n Next question: Mumbai, Chennai, and Kolkata are metropolitan cities in which country?"
         );
       } else {
-        return "Sorry, that's wrong. Thanks for playing and goodbye!";
+        return "Sorry, that's wrong. Any similarity between you and a human is purely coincidental!";
       }
     },
     isListening: true,
@@ -184,7 +184,7 @@ module.exports.botScripts = [
           " is the correct answer. Well done! \n Next question: What country calls itself Nippon?"
         );
       } else {
-        return "Sorry, that's wrong. Thanks for playing and goodbye!";
+        return "Sorry, that's wrong. Are your parents siblings?";
       }
     },
     isListening: true,
@@ -205,7 +205,7 @@ module.exports.botScripts = [
           " is the correct answer. Well done! \n Next question: What is the largest non-continental island in the world?"
         );
       } else {
-        return "Sorry, that's wrong. Thanks for playing and goodbye!";
+        return "Sorry, that's wrong. Brains aren't everything. In fact, in your case they're nothing!";
       }
     },
     isListening: true,
@@ -225,7 +225,7 @@ module.exports.botScripts = [
           " is the correct answer. Well done! \n Next question: What is the line of latitude that runs around the center of the world called?"
         );
       } else {
-        return "Sorry, that's wrong. Thanks for playing and goodbye!";
+        return "Sorry, that's wrong. Careful now, don't let your brains go to your head!";
       }
     },
     isListening: true,
@@ -247,7 +247,7 @@ module.exports.botScripts = [
           " is the correct answer. Well done! \n Next question: What is the world’s second highest mountain after Everest in Asia?"
         );
       } else {
-        return "Sorry, that's wrong. Thanks for playing and goodbye!";
+        return "Sorry, that's wrong. Did your parents ever ask you to run away from home?";
       }
     },
     isListening: true,
@@ -268,7 +268,7 @@ module.exports.botScripts = [
           " is the correct answer. Well done! \n Next question: In which ocean is Fiji?"
         );
       } else {
-        return "Sorry, that's wrong. Thanks for playing and goodbye!";
+        return "Sorry, that's wrong. Don't feel bad. A lot of people have no talent!";
       }
     },
     isListening: true,
@@ -290,7 +290,7 @@ module.exports.botScripts = [
           " is the correct answer. Well done! \n Next question: Which river rises in Peru, has no bridge crossing it and enters the sea in Brazil?"
         );
       } else {
-        return "Sorry, that's wrong. Thanks for playing and goodbye!";
+        return "Sorry, that's wrong. Have you considered suing your brains for nonsupport?";
       }
     },
     isListening: true,
@@ -312,7 +312,7 @@ module.exports.botScripts = [
           " is the correct answer. Well done! Clearly, these are too easy for you. The questions are about to get a lot harder. \n Next question: What was the name of the supercontinent of 200 million years ago?"
         );
       } else {
-        return "Sorry, that's wrong. Thanks for playing and goodbye!";
+        return "Sorry, that's wrong. You have a mind like a steel trap, always closed!";
       }
     },
     isListening: true,
@@ -333,7 +333,7 @@ module.exports.botScripts = [
           " is the correct answer. Well done! \n Next question: What is the largest of the Channel Islands?"
         );
       } else {
-        return "Sorry, that's wrong. Thanks for playing and goodbye!";
+        return "Sorry, that's wrong. You would be out of your depth in a parking lot puddle.";
       }
     },
     isListening: true,
@@ -354,7 +354,7 @@ module.exports.botScripts = [
           " is the correct answer. Well done! \n Next question: Which country shares the same peninsula as Spain?"
         );
       } else {
-        return "Sorry, that's wrong. Thanks for playing and goodbye!";
+        return "Sorry, that's wrong. You're about as much use as a condom machine in the Vatican.";
       }
     },
     isListening: true,
@@ -375,7 +375,7 @@ module.exports.botScripts = [
           " is the correct answer. Well done! \n Next question: Kuala Lumpur is the capital of which country?"
         );
       } else {
-        return "Sorry, that's wrong. Thanks for playing and goodbye!";
+        return "Sorry, that's wrong. To call you stupid would be an insult to stupid people! I've known sheep that could outwit you.";
       }
     },
     isListening: true,
@@ -394,7 +394,7 @@ module.exports.botScripts = [
           " is the correct answer. Well done! \n Next question: Which country is called the Land of Rising Sun?"
         );
       } else {
-        return "Sorry, that's wrong. Thanks for playing and goodbye!";
+        return "Sorry, that's wrong. Your brain's so minute that if a hungry cannibal cracked your head open, there wouldn't be enough to cover a small water biscuit.";
       }
     },
     isListening: true,
@@ -415,7 +415,7 @@ module.exports.botScripts = [
           " is the correct answer. Well done! \n The next question is the final question, it's hard. \n Next question: What is the capital city of Slovenia, formerly part of the state of Yugoslavia?"
         );
       } else {
-        return "Sorry, that's wrong. Thanks for playing and goodbye!";
+        return "Sorry, that's wrong. You are a fart factory, slug-slimed sack of rat guts in cat vomit. A cheesy scab picked pimple squeezing finger bandage. \nA week old maggot burger with everything on it and flies on the side.";
       }
     },
     isListening: true,
@@ -436,7 +436,7 @@ module.exports.botScripts = [
           " is the correct answer. Well done! \n Your Geography skills are on point. Go off and teach this stuff instead of trying to punch code."
         );
       } else {
-        return "Sorry, that's wrong. Thanks for playing and goodbye!";
+        return "Sorry, that's wrong. You are about one bit short of a byte.";
       }
     },
     isListening: true,
