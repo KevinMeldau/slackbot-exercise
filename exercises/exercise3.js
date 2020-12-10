@@ -101,19 +101,19 @@ module.exports.botScripts = [
     label: "Start Game",
     prompt: "Yes I am",
     handler: function (params) {
-      return "Great! Now that we've hopefully got rid of those Florida people, let's start playing! \n This is a game to test your Geography skills. \n It's very simple, as long as you keep answering correctly, you keep progressing through the different levels. \n There are 15 levels and each level should get harder. \n This year we lost a Alex Trebek (host of Jeopardy) to cancer, to pay homage to him we will answer all questions in the form of a question - Jeopardy style! \n To start the game, answer this question: ________ is the study of places and the relationships between people and their environments.";
+      return "Great! Now that we've hopefully got rid of those Florida people, let's start playing! \n This is a game to test your Geography skills. \n It's very simple, as long as you keep answering correctly, you keep progressing through the different levels. \n There are 16 levels and each level gets harder. \n To answer a question simply put in the question number followed by the answer, like this: Q1: Answer \n To start the game, answer this question: ________ is the study of places and the relationships between people and their environments.";
     },
     isListening: true,
   },
   {
     label: "Question 1",
-    prompt: "Q1: What is #{answer1}?",
+    prompt: "Q1: #{answer1}",
     handler: function (params) {
       const answer1 = params.answer1;
       if (answer1.toLowerCase() === "geography") {
         return (
           answer1 +
-          " is the correct answer. Well done! \n Next question: What is the second biggest country?"
+          " is the correct answer. Well done! \n Next question: What is the second biggest country in the world?"
         );
       } else {
         return "Sorry, that's wrong. Thanks for playing and goodbye!";
@@ -123,7 +123,7 @@ module.exports.botScripts = [
   },
   {
     label: "Question 2",
-    prompt: "Q2: What is #{answer2}?",
+    prompt: "Q2: #{answer2}",
     handler: function (params) {
       const answer2 = params.answer2;
       if (answer2.toLowerCase() === "canada") {
@@ -139,7 +139,7 @@ module.exports.botScripts = [
   },
   {
     label: "Question 3",
-    prompt: "Q3: What is the #{answer3}?",
+    prompt: "Q3: #{answer3}",
     handler: function (params) {
       const answer3 = params.answer3;
       if (answer3.toLowerCase() === "nile") {
@@ -156,7 +156,7 @@ module.exports.botScripts = [
   },
   {
     label: "Question 4",
-    prompt: "Q4: What is #{answer4}?",
+    prompt: "Q4: #{answer4}",
     handler: function (params) {
       const answer4 = params.answer4;
       if (answer4.toLowerCase() === "india") {
@@ -172,7 +172,7 @@ module.exports.botScripts = [
   },
   {
     label: "Question 5",
-    prompt: "Q5: What is #{answer5}?",
+    prompt: "Q5: #{answer5}",
     handler: function (params) {
       const answer5 = params.answer5;
       if (answer5.toLowerCase() === "japan") {
@@ -188,7 +188,7 @@ module.exports.botScripts = [
   },
   {
     label: "Question 6",
-    prompt: "Q6: What is the #{answer6}?",
+    prompt: "Q6: #{answer6}",
     handler: function (params) {
       const answer6 = params.answer6;
       if (answer6.toLowerCase() === "usa and canada") {
@@ -205,7 +205,7 @@ module.exports.botScripts = [
   },
   {
     label: "Question 7",
-    prompt: "Q7: What is the #{answer7}?",
+    prompt: "Q7: #{answer7}",
     handler: function (params) {
       const answer7 = params.answer7;
       if (answer7.toLowerCase() === "equator") {
@@ -222,7 +222,7 @@ module.exports.botScripts = [
   },
   {
     label: "Question 8",
-    prompt: "Q8: What is #{answer8}?",
+    prompt: "Q8: #{answer8}",
     handler: function (params) {
       const answer8 = params.answer8;
       if (answer8.toLowerCase() === "k2") {
@@ -238,7 +238,7 @@ module.exports.botScripts = [
   },
   {
     label: "Question 9",
-    prompt: "Q9: What is the #{answer9}?",
+    prompt: "Q9: #{answer9}",
     handler: function (params) {
       const answer9 = params.answer9;
       if (answer9.toLowerCase() === "pacific") {
@@ -255,7 +255,7 @@ module.exports.botScripts = [
   },
   {
     label: "Question 10",
-    prompt: "Q10: What is the #{answer10}?",
+    prompt: "Q10: #{answer10}",
     handler: function (params) {
       const answer10 = params.answer10;
       if (answer10.toLowerCase() === "amazon") {
@@ -272,7 +272,7 @@ module.exports.botScripts = [
   },
   {
     label: "Question 11",
-    prompt: "Q11: What is #{answer11}?",
+    prompt: "Q11: #{answer11}",
     handler: function (params) {
       const answer11 = params.answer11;
       if (answer11.toLowerCase() === "pangaea") {
@@ -288,11 +288,78 @@ module.exports.botScripts = [
   },
   {
     label: "Question 12",
-    prompt: "Q12: What is #{answer12}?",
+    prompt: "Q12: #{answer12}",
     handler: function (params) {
       const answer12 = params.answer12;
       if (answer12.toLowerCase() === "jersey") {
-        return answer12 + " is the correct answer. Well done!";
+        return (
+          answer12 +
+          " is the correct answer. Well done! \n Next question: Which country shares the same peninsula as Spain?"
+        );
+      } else {
+        return "Sorry, that's wrong. Thanks for playing and goodbye!";
+      }
+    },
+    isListening: true,
+  },
+  {
+    label: "Question 13",
+    prompt: "Q13: #{answer13}",
+    handler: function (params) {
+      const answer13 = params.answer13;
+      if (answer13.toLowerCase() === "portugal") {
+        return (
+          answer13 +
+          " is the correct answer. Well done! \n Next question: The United Kingdom consists of England, Scotland, Wales, and which other region?"
+        );
+      } else {
+        return "Sorry, that's wrong. Thanks for playing and goodbye!";
+      }
+    },
+    isListening: true,
+  },
+  {
+    label: "Question 14",
+    prompt: "Q14: #{answer14}",
+    handler: function (params) {
+      const answer14 = params.answer14;
+      if (answer14.toLowerCase() === "northern ireland") {
+        return (
+          answer14 +
+          " is the correct answer. Well done! \n Next question: Which country is called the Land of Rising Sun?"
+        );
+      } else {
+        return "Sorry, that's wrong. Thanks for playing and goodbye!";
+      }
+    },
+    isListening: true,
+  },
+  {
+    label: "Question 15",
+    prompt: "Q15: #{answer15}",
+    handler: function (params) {
+      const answer15 = params.answer15;
+      if (answer15.toLowerCase() === "japan") {
+        return (
+          answer15 +
+          " is the correct answer. Well done! \n The next question is the final question, it's hard. \n Next question: What is the capital city of Slovenia, formerly part of the state of Yugoslavia?"
+        );
+      } else {
+        return "Sorry, that's wrong. Thanks for playing and goodbye!";
+      }
+    },
+    isListening: true,
+  },
+  {
+    label: "Final Answer",
+    prompt: "Q16: #{answer16}",
+    handler: function (params) {
+      const answer16 = params.answer16;
+      if (answer16.toLowerCase() === "ljubljana") {
+        return (
+          answer16 +
+          " is the correct answer. Well done! \n Your Geography skills are on point. Go off and teach this stuff instead of trying to punch code."
+        );
       } else {
         return "Sorry, that's wrong. Thanks for playing and goodbye!";
       }
