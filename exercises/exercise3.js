@@ -202,7 +202,7 @@ module.exports.botScripts = [
           `${
             answer5.charAt(0).toUpperCase() + answer5.slice(1).toLowerCase()
           }` +
-          " is the correct answer. Well done! \n Next question: Which countries share the longest border in the world?"
+          " is the correct answer. Well done! \n Next question: What is the largest non-continental island in the world?"
         );
       } else {
         return "Sorry, that's wrong. Thanks for playing and goodbye!";
@@ -215,7 +215,7 @@ module.exports.botScripts = [
     prompt: "Q6: #{answer6}",
     handler: function (params, state) {
       const answer6 = params.answer6;
-      if (answer6.toLowerCase() === "usa and canada") {
+      if (answer6.toLowerCase() === "greenland") {
         return (
           "Nice job " +
           state.firstName +
@@ -372,7 +372,7 @@ module.exports.botScripts = [
           `${
             answer13.charAt(0).toUpperCase() + answer13.slice(1).toLowerCase()
           }` +
-          " is the correct answer. Well done! \n Next question: The United Kingdom consists of England, Scotland, Wales, and which other region?"
+          " is the correct answer. Well done! \n Next question: Kuala Lumpur is the capital of which country?"
         );
       } else {
         return "Sorry, that's wrong. Thanks for playing and goodbye!";
@@ -385,7 +385,7 @@ module.exports.botScripts = [
     prompt: "Q14: #{answer14}",
     handler: function (params, state) {
       const answer14 = params.answer14;
-      if (answer14.toLowerCase() === "northern ireland") {
+      if (answer14.toLowerCase() === "malaysia") {
         return (
           "Nice job " +
           state.firstName +
