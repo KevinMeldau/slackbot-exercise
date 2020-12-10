@@ -10,15 +10,6 @@ module.exports.botScripts = [
     },
     isListening: true,
   },
-
-  // handler: function (params, state) {
-  //   state.firstName = params.name
-  // }
-
-  // handler: function (params, state) {
-  //   return 'Hi ' + state.firstName
-  // }
-
   {
     label: "Name",
     prompt: "It's #{name}",
@@ -163,7 +154,7 @@ module.exports.botScripts = [
           "Nice job " +
           state.firstName +
           ", " +
-          "The " +
+          "the " +
           answer3 +
           " is the correct answer. Well done! \n Next question: Mumbai, Chennai, and Kolkata are metropolitan cities in which country?"
         );
