@@ -135,7 +135,9 @@ module.exports.botScripts = [
           "Nice job " +
           state.firstName +
           ", " +
-          answer2 +
+          `${
+            answer2.charAt(0).toUpperCase() + answer2.slice(1).toLowerCase()
+          }` +
           " is the correct answer. Well done! \n Next question: What is the longest river in Africa?"
         );
       } else {
@@ -155,7 +157,9 @@ module.exports.botScripts = [
           state.firstName +
           ", " +
           "the " +
-          answer3 +
+          `${
+            answer3.charAt(0).toUpperCase() + answer3.slice(1).toLowerCase()
+          }` +
           " is the correct answer. Well done! \n Next question: Mumbai, Chennai, and Kolkata are metropolitan cities in which country?"
         );
       } else {
@@ -174,7 +178,9 @@ module.exports.botScripts = [
           "Nice job " +
           state.firstName +
           ", " +
-          answer4 +
+          `${
+            answer4.charAt(0).toUpperCase() + answer4.slice(1).toLowerCase()
+          }` +
           " is the correct answer. Well done! \n Next question: What country calls itself Nippon?"
         );
       } else {
@@ -193,7 +199,9 @@ module.exports.botScripts = [
           "Nice job " +
           state.firstName +
           ", " +
-          answer5 +
+          `${
+            answer5.charAt(0).toUpperCase() + answer5.slice(1).toLowerCase()
+          }` +
           " is the correct answer. Well done! \n Next question: Which countries share the longest border in the world?"
         );
       } else {
@@ -233,7 +241,9 @@ module.exports.botScripts = [
           state.firstName +
           ", " +
           "the " +
-          answer7 +
+          `${
+            answer7.charAt(0).toUpperCase() + answer7.slice(1).toLowerCase()
+          }` +
           " is the correct answer. Well done! \n Next question: What is the world’s second highest mountain after Everest in Asia?"
         );
       } else {
@@ -252,7 +262,9 @@ module.exports.botScripts = [
           "Nice job " +
           state.firstName +
           ", " +
-          answer8 +
+          `${
+            answer8.charAt(0).toUpperCase() + answer8.slice(1).toLowerCase()
+          }` +
           " is the correct answer. Well done! \n Next question: In which ocean is Fiji?"
         );
       } else {
@@ -272,7 +284,9 @@ module.exports.botScripts = [
           state.firstName +
           ", " +
           "the " +
-          answer9 +
+          `${
+            answer9.charAt(0).toUpperCase() + answer9.slice(1).toLowerCase()
+          }` +
           " is the correct answer. Well done! \n Next question: Which river rises in Peru, has no bridge crossing it and enters the sea in Brazil?"
         );
       } else {
@@ -292,7 +306,9 @@ module.exports.botScripts = [
           state.firstName +
           ", " +
           "the " +
-          answer10 +
+          `${
+            answer10.charAt(0).toUpperCase() + answer10.slice(1).toLowerCase()
+          }` +
           " is the correct answer. Well done! Clearly, these are too easy for you. The questions are about to get a lot harder. \n Next question: What was the name of the supercontinent of 200 million years ago?"
         );
       } else {
@@ -311,7 +327,9 @@ module.exports.botScripts = [
           "Nice job " +
           state.firstName +
           ", " +
-          answer11 +
+          `${
+            answer11.charAt(0).toUpperCase() + answer11.slice(1).toLowerCase()
+          }` +
           " is the correct answer. Well done! \n Next question: What is the largest of the Channel Islands?"
         );
       } else {
@@ -330,7 +348,9 @@ module.exports.botScripts = [
           "Nice job " +
           state.firstName +
           ", " +
-          answer12 +
+          `${
+            answer12.charAt(0).toUpperCase() + answer12.slice(1).toLowerCase()
+          }` +
           " is the correct answer. Well done! \n Next question: Which country shares the same peninsula as Spain?"
         );
       } else {
@@ -349,7 +369,9 @@ module.exports.botScripts = [
           "Nice job " +
           state.firstName +
           ", " +
-          answer13 +
+          `${
+            answer13.charAt(0).toUpperCase() + answer13.slice(1).toLowerCase()
+          }` +
           " is the correct answer. Well done! \n Next question: The United Kingdom consists of England, Scotland, Wales, and which other region?"
         );
       } else {
@@ -387,7 +409,9 @@ module.exports.botScripts = [
           "Nice job " +
           state.firstName +
           ", " +
-          answer15 +
+          `${
+            answer15.charAt(0).toUpperCase() + answer15.slice(1).toLowerCase()
+          }` +
           " is the correct answer. Well done! \n The next question is the final question, it's hard. \n Next question: What is the capital city of Slovenia, formerly part of the state of Yugoslavia?"
         );
       } else {
@@ -406,7 +430,9 @@ module.exports.botScripts = [
           "Nice job " +
           state.firstName +
           ", " +
-          answer16 +
+          `${
+            answer16.charAt(0).toUpperCase() + answer16.slice(1).toLowerCase()
+          }` +
           " is the correct answer. Well done! \n Your Geography skills are on point. Go off and teach this stuff instead of trying to punch code."
         );
       } else {
