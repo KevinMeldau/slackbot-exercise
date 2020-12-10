@@ -9,7 +9,6 @@ module.exports.botScripts = [
       return 'Hi there! Before we get started, I just need to point out that I don\'t like one word answers. \n So instead of answering with "Bob", try "It\'s Bob". Why don\'t you start by telling me your name?';
     },
     isListening: true,
-    isCaseSensitive: false,
   },
   {
     label: 'Name',
@@ -23,7 +22,6 @@ module.exports.botScripts = [
       );
     },
     isListening: true,
-    isCaseSensitive: false,
   },
   {
     label: 'State',
@@ -98,7 +96,6 @@ module.exports.botScripts = [
       }
     },
     isListening: true,
-    isCaseSensitive: false,
   },
   {
     label: 'Start Game',
@@ -107,7 +104,6 @@ module.exports.botScripts = [
       return "Great! Now that we've hopefully got rid of those Florida people, let's start playing! \n This is a game to test your Geography skills. \n It's very simple, as long as you keep answering correctly, you keep progressing through the different levels. \n There are 15 levels and each level should get harder. \n This year we lost a Alex Trebek (host of Jeopardy) to cancer, to pay homage to him we will answer all questions in the form of a question - Jeopardy style! \n To start the game, answer this question: ________ is the study of places and the relationships between people and their environments.";
     },
     isListening: true,
-    isCaseSensitive: false,
   },
   {
     label: 'Question 1',
@@ -124,7 +120,6 @@ module.exports.botScripts = [
       }
     },
     isListening: true,
-    isCaseSensitive: false,
   },
   {
     label: 'Question 2',
@@ -141,7 +136,6 @@ module.exports.botScripts = [
       }
     },
     isListening: true,
-    isCaseSensitive: false,
   },
   {
     label: 'Question 3',
@@ -159,7 +153,6 @@ module.exports.botScripts = [
       }
     },
     isListening: true,
-    isCaseSensitive: false,
   },
   {
     label: 'Question 4',
@@ -176,7 +169,6 @@ module.exports.botScripts = [
       }
     },
     isListening: true,
-    isCaseSensitive: false,
   },
   {
     label: 'Question 5',
@@ -193,7 +185,6 @@ module.exports.botScripts = [
       }
     },
     isListening: true,
-    isCaseSensitive: false,
   },
   {
     label: 'Question 6',
@@ -211,7 +202,6 @@ module.exports.botScripts = [
       }
     },
     isListening: true,
-    isCaseSensitive: false,
   },
   {
     label: 'Question 7',
@@ -220,7 +210,8 @@ module.exports.botScripts = [
       const answer7 = params.answer7;
       if (answer7 === 'equator' || answer7 === 'Equator') {
         return (
-          'The' + answer7 +
+          'The' +
+          answer7 +
           ' is the correct answer. Well done! \n Next question: What is the world’s second highest mountain after Everest in Asia?'
         );
       } else {
@@ -228,7 +219,6 @@ module.exports.botScripts = [
       }
     },
     isListening: true,
-    isCaseSensitive: false,
   },
   {
     label: 'Question 8',
@@ -245,7 +235,6 @@ module.exports.botScripts = [
       }
     },
     isListening: true,
-    isCaseSensitive: false,
   },
   {
     label: 'Question 8',
@@ -253,13 +242,16 @@ module.exports.botScripts = [
     handler: function (params) {
       const answer8 = params.answer8;
       if (answer8 === 'pacific' || answer8 === 'Pacific') {
-        return 'The ' + answer8 + ' is the correct answer. Well done! \n Next question: Which river rises in Peru, has no bridge crossing it and enters the sea in Brazil?';
+        return (
+          'The ' +
+          answer8 +
+          ' is the correct answer. Well done! \n Next question: Which river rises in Peru, has no bridge crossing it and enters the sea in Brazil?'
+        );
       } else {
         return 'Wrong';
       }
     },
     isListening: true,
-    isCaseSensitive: false,
   },
   {
     label: 'Question 9',
@@ -267,13 +259,16 @@ module.exports.botScripts = [
     handler: function (params) {
       const answer9 = params.answer9;
       if (answer9 === 'amazon' || answer9 === 'Amazon') {
-        return 'The ' + answer9 + ' is the correct answer. Well done! Clearly, these are too easy for you. The questions are about to get a lot harder. \n Next question: What was the name of the supercontinent of 200 million years ago?';
+        return (
+          'The ' +
+          answer9 +
+          ' is the correct answer. Well done! Clearly, these are too easy for you. The questions are about to get a lot harder. \n Next question: What was the name of the supercontinent of 200 million years ago?'
+        );
       } else {
         return 'Wrong';
       }
     },
     isListening: true,
-    isCaseSensitive: false,
   },
   {
     label: 'Question 10',
@@ -281,42 +276,33 @@ module.exports.botScripts = [
     handler: function (params) {
       const answer10 = params.answer10;
       if (answer10 === 'pangaea' || answer10 === 'Pangaea') {
-        return answer10 + ' is the correct answer. Well done! \n Next question: Name the countries surround the Czech Republic?';
+        return (
+          answer10 +
+          ' is the correct answer. Well done! \n Next question: Name the countries surround the Czech Republic?'
+        );
       } else {
         return 'Wrong';
       }
     },
     isListening: true,
-    isCaseSensitive: false,
   },
   {
     label: 'Question 10',
     prompt: 'What is #{answer10}?',
     handler: function (params) {
       const answer10 = params.answer10;
-      if (answer10 === 'germany, poland, slovakia, and austria' || answer10 === 'Germany, Poland, Slovakia, and Austria') {
+      if (
+        answer10 === 'germany, poland, slovakia, and austria' ||
+        answer10 === 'Germany, Poland, Slovakia, and Austria'
+      ) {
         return answer10 + ' is the correct answer. Well done!';
       } else {
         return 'Wrong';
       }
     },
     isListening: true,
-    isCaseSensitive: false,
   },
 ];
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // I know I\'m just a Slackbot, but you\'re making me blush! What can I do with you? Sorry! I mean how can I help you
 
