@@ -79,7 +79,7 @@ function getParams(userPrompt, templatePrompt) {
 }
 
 
-function processExerciseObject(robot, scripts) {
+function processExerciseObject(robot, scripts, state) {
   for (messageObj of scripts) {
     const { label, handler, prompt, isReply, isListening, isCaseSensitive } = messageObj
     const command = isListening ? "hear" : "respond"
@@ -93,7 +93,7 @@ function processExerciseObject(robot, scripts) {
       const userPrompt = res.match[0]
       try {
         const params = getParams(userPrompt, prompt)
-        const response = handler(params)
+        const response = handler(params, state)
 
         if (isReply) {
           res.reply(response)
@@ -108,15 +108,16 @@ function processExerciseObject(robot, scripts) {
 }
 
 module.exports = (robot) => {
+  const state = {}
   if (exercise1.ACTIVATE_BOT) {
-    processExerciseObject(robot, exercise1.botScripts)
+    processExerciseObject(robot, exercise1.botScripts, state)
   }
 
   if (exercise2.ACTIVATE_BOT) {
-    processExerciseObject(robot, exercise2.botScripts)
+    processExerciseObject(robot, exercise2.botScripts, state)
   }
 
   if (exercise3.ACTIVATE_BOT) {
-    processExerciseObject(robot, exercise3.botScripts)
+    processExerciseObject(robot, exercise3.botScripts, state)
   }
 }
