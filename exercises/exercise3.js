@@ -109,7 +109,6 @@ module.exports.botScripts = [
     label: "Question 1",
     prompt: "Q1: #{answer1}",
     handler: function (params, state) {
-      let score = state.score;
       score = 10;
       const answer1 = params.answer1;
       if (answer1.toLowerCase() === "geography") {
