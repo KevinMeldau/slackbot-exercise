@@ -129,7 +129,6 @@ module.exports.botScripts = [
     label: "Question 2",
     prompt: "Q2: #{answer2}",
     handler: function (params, state) {
-      // score = 20;
       const answer2 = params.answer2;
       if (answer2.toLowerCase() === "canada") {
         return (
