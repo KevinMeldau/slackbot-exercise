@@ -14,7 +14,6 @@ module.exports.botScripts = [
     label: "Name",
     prompt: "It's #{name}",
     handler: function (params, state) {
-      let firstName = params.name;
       state.firstName = params.name;
       return (
         "OK, " +
