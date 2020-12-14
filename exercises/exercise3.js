@@ -109,7 +109,7 @@ module.exports.botScripts = [
     label: "Question 1",
     prompt: "Q1: #{answer1}",
     handler: function (params, state) {
-      score = 10;
+      state.score = 0;
       const answer1 = params.answer1;
       if (answer1.toLowerCase() === "geography") {
         return (
@@ -117,7 +117,7 @@ module.exports.botScripts = [
           state.firstName +
           ", " +
           answer1 +
-          " is the correct answer. Well done! Your score is " + score + "." + "\nNext question: What is the second biggest country in the world?"
+          " is the correct answer. Well done! Your score is " + (state.score += 10) + "." + "\nNext question: What is the second biggest country in the world?"
         );
       } else {
         return "Sorry, that's wrong. A person with your IQ should have a low voice too!";
@@ -129,7 +129,7 @@ module.exports.botScripts = [
     label: "Question 2",
     prompt: "Q2: #{answer2}",
     handler: function (params, state) {
-      score = 20;
+      // score = 20;
       const answer2 = params.answer2;
       if (answer2.toLowerCase() === "canada") {
         return (
@@ -139,7 +139,7 @@ module.exports.botScripts = [
           `${
             answer2.charAt(0).toUpperCase() + answer2.slice(1).toLowerCase()
           }` +
-          " is the correct answer. Well done! Your score is " + score + "." + "\nNext question: What is the longest river in Africa?"
+          " is the correct answer. Well done! Your score is " + (state.score += 10) + "." + "\nNext question: What is the longest river in Africa?"
         );
       } else {
         return "Sorry, that's wrong. All that you are you owe to your parents. Why don't you send them a penny and square the account?";
@@ -151,7 +151,6 @@ module.exports.botScripts = [
     label: "Question 3",
     prompt: "Q3: #{answer3}",
     handler: function (params, state) {
-      score = 30;
       const answer3 = params.answer3;
       if (answer3.toLowerCase() === "nile") {
         return (
@@ -162,7 +161,7 @@ module.exports.botScripts = [
           `${
             answer3.charAt(0).toUpperCase() + answer3.slice(1).toLowerCase()
           }` +
-          " is the correct answer. Well done! Your score is " + score + "." + "\nNext question: Mumbai, Chennai, and Kolkata are metropolitan cities in which country?"
+          " is the correct answer. Well done! Your score is " + (state.score += 10) + "." + "\nNext question: Mumbai, Chennai, and Kolkata are metropolitan cities in which country?"
         );
       } else {
         return "Sorry, that's wrong. Any similarity between you and a human is purely coincidental!";
@@ -174,7 +173,6 @@ module.exports.botScripts = [
     label: "Question 4",
     prompt: "Q4: #{answer4}",
     handler: function (params, state) {
-      score = 40;
       const answer4 = params.answer4;
       if (answer4.toLowerCase() === "india") {
         return (
@@ -184,7 +182,7 @@ module.exports.botScripts = [
           `${
             answer4.charAt(0).toUpperCase() + answer4.slice(1).toLowerCase()
           }` +
-          " is the correct answer. Well done! Your score is " + score + "." + "\nNext question: What country calls itself Nippon?"
+          " is the correct answer. Well done! Your score is " + (state.score += 10) + "." + "\nNext question: What country calls itself Nippon?"
         );
       } else {
         return "Sorry, that's wrong. Are your parents siblings?";
@@ -196,7 +194,6 @@ module.exports.botScripts = [
     label: "Question 5",
     prompt: "Q5: #{answer5}",
     handler: function (params, state) {
-      score = 50;
       const answer5 = params.answer5;
       if (answer5.toLowerCase() === "japan") {
         return (
@@ -206,7 +203,7 @@ module.exports.botScripts = [
           `${
             answer5.charAt(0).toUpperCase() + answer5.slice(1).toLowerCase()
           }` +
-          " is the correct answer. Well done! Your score is " + score + "." + "\nNext question: What is the largest non-continental island in the world?"
+          " is the correct answer. Well done! Your score is " + (state.score += 10) + "." + "\nNext question: What is the largest non-continental island in the world?"
         );
       } else {
         return "Sorry, that's wrong. Brains aren't everything. In fact, in your case they're nothing!";
@@ -218,7 +215,6 @@ module.exports.botScripts = [
     label: "Question 6",
     prompt: "Q6: #{answer6}",
     handler: function (params, state) {
-      score = 60;
       const answer6 = params.answer6;
       if (answer6.toLowerCase() === "greenland") {
         return (
@@ -227,7 +223,7 @@ module.exports.botScripts = [
           ", " +
           "the " +
           answer6 +
-          " is the correct answer. Well done! Your score is " + score + "." + "\nNext question: What is the line of latitude that runs around the center of the world called?"
+          " is the correct answer. Well done! Your score is " + (state.score += 10) + "." + "\nNext question: What is the line of latitude that runs around the center of the world called?"
         );
       } else {
         return "Sorry, that's wrong. Careful now, don't let your brains go to your head!";
@@ -239,7 +235,6 @@ module.exports.botScripts = [
     label: "Question 7",
     prompt: "Q7: #{answer7}",
     handler: function (params, state) {
-      score = 70;
       const answer7 = params.answer7;
       if (answer7.toLowerCase() === "equator") {
         return (
@@ -250,7 +245,7 @@ module.exports.botScripts = [
           `${
             answer7.charAt(0).toUpperCase() + answer7.slice(1).toLowerCase()
           }` +
-          " is the correct answer. Well done! Your score is " + score + "." + "\nNext question: What is the world’s second highest mountain after Everest in Asia?"
+          " is the correct answer. Well done! Your score is " + (state.score += 10) + "." + "\nNext question: What is the world’s second highest mountain after Everest in Asia?"
         );
       } else {
         return "Sorry, that's wrong. Did your parents ever ask you to run away from home?";
@@ -262,7 +257,6 @@ module.exports.botScripts = [
     label: "Question 8",
     prompt: "Q8: #{answer8}",
     handler: function (params, state) {
-      score = 80;
       const answer8 = params.answer8;
       if (answer8.toLowerCase() === "k2") {
         return (
@@ -272,7 +266,7 @@ module.exports.botScripts = [
           `${
             answer8.charAt(0).toUpperCase() + answer8.slice(1).toLowerCase()
           }` +
-          " is the correct answer. Well done! Your score is " + score + "." + "\nNext question: In which ocean is Fiji?"
+          " is the correct answer. Well done! Your score is " + (state.score += 10) + "." + "\nNext question: In which ocean is Fiji?"
         );
       } else {
         return "Sorry, that's wrong. Don't feel bad. A lot of people have no talent!";
@@ -284,7 +278,6 @@ module.exports.botScripts = [
     label: "Question 9",
     prompt: "Q9: #{answer9}",
     handler: function (params, state) {
-      score = 90;
       const answer9 = params.answer9;
       if (answer9.toLowerCase() === "pacific") {
         return (
@@ -295,7 +288,7 @@ module.exports.botScripts = [
           `${
             answer9.charAt(0).toUpperCase() + answer9.slice(1).toLowerCase()
           }` +
-          " is the correct answer. Well done! Your score is " + score + "." + "\nNext question: Which river rises in Peru, has no bridge crossing it and enters the sea in Brazil?"
+          " is the correct answer. Well done! Your score is " + (state.score += 10) + "." + "\nNext question: Which river rises in Peru, has no bridge crossing it and enters the sea in Brazil?"
         );
       } else {
         return "Sorry, that's wrong. Have you considered suing your brains for nonsupport?";
@@ -307,7 +300,6 @@ module.exports.botScripts = [
     label: "Question 10",
     prompt: "Q10: #{answer10}",
     handler: function (params, state) {
-      score = 100;
       const answer10 = params.answer10;
       if (answer10.toLowerCase() === "amazon") {
         return (
@@ -318,7 +310,7 @@ module.exports.botScripts = [
           `${
             answer10.charAt(0).toUpperCase() + answer10.slice(1).toLowerCase()
           }` +
-          " is the correct answer. Well done! Clearly, these are too easy for you. The questions are about to get a lot harder.\nYour score is " + score + "." + "\nNext question: What was the name of the supercontinent of 200 million years ago?"
+          " is the correct answer. Well done! Clearly, these are too easy for you. The questions are about to get a lot harder.\nYour score is " + (state.score += 10) + "." + "\nNext question: What was the name of the supercontinent of 200 million years ago?"
         );
       } else {
         return "Sorry, that's wrong. You have a mind like a steel trap, always closed!";
@@ -330,7 +322,6 @@ module.exports.botScripts = [
     label: "Question 11",
     prompt: "Q11: #{answer11}",
     handler: function (params, state) {
-      score = 110;
       const answer11 = params.answer11;
       if (answer11.toLowerCase() === "pangaea") {
         return (
@@ -340,7 +331,7 @@ module.exports.botScripts = [
           `${
             answer11.charAt(0).toUpperCase() + answer11.slice(1).toLowerCase()
           }` +
-          " is the correct answer. Well done! Your score is " + score + "." + "\nNext question: What is the largest of the Channel Islands?"
+          " is the correct answer. Well done! Your score is " + (state.score += 10) + "." + "\nNext question: What is the largest of the Channel Islands?"
         );
       } else {
         return "Sorry, that's wrong. You would be out of your depth in a parking lot puddle.";
@@ -352,7 +343,6 @@ module.exports.botScripts = [
     label: "Question 12",
     prompt: "Q12: #{answer12}",
     handler: function (params, state) {
-      score = 120;
       const answer12 = params.answer12;
       if (answer12.toLowerCase() === "jersey") {
         return (
@@ -362,7 +352,7 @@ module.exports.botScripts = [
           `${
             answer12.charAt(0).toUpperCase() + answer12.slice(1).toLowerCase()
           }` +
-          " is the correct answer. Well done! Your score is " + score + "." + "\nNext question: Which country shares the same peninsula as Spain?"
+          " is the correct answer. Well done! Your score is " + (state.score += 10) + "." + "\nNext question: Which country shares the same peninsula as Spain?"
         );
       } else {
         return "Sorry, that's wrong. You're about as much use as a condom machine in the Vatican.";
@@ -374,7 +364,6 @@ module.exports.botScripts = [
     label: "Question 13",
     prompt: "Q13: #{answer13}",
     handler: function (params, state) {
-      score = 130;
       const answer13 = params.answer13;
       if (answer13.toLowerCase() === "portugal") {
         return (
@@ -384,7 +373,7 @@ module.exports.botScripts = [
           `${
             answer13.charAt(0).toUpperCase() + answer13.slice(1).toLowerCase()
           }` +
-          " is the correct answer. Well done! Your score is " + score + "." + "\nNext question: Kuala Lumpur is the capital of which country?"
+          " is the correct answer. Well done! Your score is " + (state.score += 10) + "." + "\nNext question: Kuala Lumpur is the capital of which country?"
         );
       } else {
         return "Sorry, that's wrong. To call you stupid would be an insult to stupid people! I've known sheep that could outwit you.";
@@ -396,7 +385,6 @@ module.exports.botScripts = [
     label: "Question 14",
     prompt: "Q14: #{answer14}",
     handler: function (params, state) {
-      score = 140;
       const answer14 = params.answer14;
       if (answer14.toLowerCase() === "malaysia") {
         return (
@@ -404,7 +392,7 @@ module.exports.botScripts = [
           state.firstName +
           ", " +
           answer14 +
-          " is the correct answer. Well done! Your score is " + score + "." + "\nNext question: Which country is called the Land of Rising Sun?"
+          " is the correct answer. Well done! Your score is " + (state.score += 10) + "." + "\nNext question: Which country is called the Land of Rising Sun?"
         );
       } else {
         return "Sorry, that's wrong. Your brain's so minute that if a hungry cannibal cracked your head open, there wouldn't be enough to cover a small water biscuit.";
@@ -416,7 +404,6 @@ module.exports.botScripts = [
     label: "Question 15",
     prompt: "Q15: #{answer15}",
     handler: function (params, state) {
-      score = 150;
       const answer15 = params.answer15;
       if (answer15.toLowerCase() === "japan") {
         return (
@@ -426,7 +413,7 @@ module.exports.botScripts = [
           `${
             answer15.charAt(0).toUpperCase() + answer15.slice(1).toLowerCase()
           }` +
-          " is the correct answer. Well done! Your score is " + score + "." + "\nThe next question is the final question, it's hard.\nNext question: What is the capital city of Slovenia, formerly part of the state of Yugoslavia?"
+          " is the correct answer. Well done! Your score is " + (state.score += 10) + "." + "\nThe next question is the final question, it's hard.\nNext question: What is the capital city of Slovenia, formerly part of the state of Yugoslavia?"
         );
       } else {
         return "Sorry, that's wrong. You are a fart factory, slug-slimed sack of rat guts in cat vomit. A cheesy scab picked pimple squeezing finger bandage. \nA week old maggot burger with everything on it and flies on the side.";
@@ -438,7 +425,6 @@ module.exports.botScripts = [
     label: "Final Answer",
     prompt: "Q16: #{answer16}",
     handler: function (params, state) {
-      score = 160;
       const answer16 = params.answer16;
       if (answer16.toLowerCase() === "ljubljana") {
         return (
@@ -448,7 +434,7 @@ module.exports.botScripts = [
           `${
             answer16.charAt(0).toUpperCase() + answer16.slice(1).toLowerCase()
           }` +
-          " is the correct answer. Well done! Your score is " + score + "." + "\nYour Geography skills are on point. Go off and teach this stuff instead of trying to punch code."
+          " is the correct answer. Well done! Your score is " + (state.score += 10) + "." + "\nYour Geography skills are on point. Go off and teach this stuff instead of trying to punch code."
         );
       } else {
         return "Sorry, that's wrong. You are about one bit short of a byte.";
